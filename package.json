@@ -1,0 +1,22 @@
+{
+  "name": "00---jogo",
+  "version": "1.0.0",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "scripts": {
+    "kill-port": "kill-port --port 3000",
+    "start:dev": "npm run kill-port && cross-env NODE_ENV=dev nodemon watch server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "kill-port": "^2.0.1",
+    "nodemon": "^2.0.19",
+    "socket.io": "^4.5.1"
+  }
+}
